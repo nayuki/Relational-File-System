@@ -25,6 +25,7 @@ The RelFS proposal does not cover:
 * Repository storage formats and low-level details like file packing, fragmentation, delta encoding, indexes, etc.
 * Multi-user concerns such as file permissions, storage quotas, etc.
 * Administrative details such as replication, fault handling, etc.
+* Support for file change notifications, publish/subscribe, etc.
 
 
 ## Background and motivation
@@ -66,6 +67,7 @@ However, this ubiquitous hierarchical file model is full of undesirable features
 * File system implementation can store more copies
 * Can implement stuff like file permissions, even hierarchies
 * Interfaces poorly with path-based systems, but also these systems don't take advantage of hash features
+* Is not a graph database, but is more general
 
 
 ## License
